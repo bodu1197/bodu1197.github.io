@@ -37,17 +37,12 @@ h1 {
 
 .title-link {
     color: #2c3e50;
-    text-decoration: underline;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
 .title-link:hover {
     color: #3498db;
-}
-
-.title-link:focus {
-    outline: 2px solid #3498db;
-    outline-offset: 2px;
 }
 
 .meta {
@@ -84,11 +79,10 @@ h1 {
     border-radius: 4px;
     font-size: 0.9em;
     transition: all 0.3s;
-    text-decoration: underline;
 }
 
 .read-more {
-    background-color: #2980b9;
+    background-color: #3498db;
     color: white;
 }
 
@@ -97,69 +91,47 @@ h1 {
     color: white;
 }
 
-.read-more:hover {
-    background-color: #2471a3;
-    transform: translateY(-1px);
-}
-
+.read-more:hover,
 .original-link:hover {
-    background-color: #2c3e50;
+    opacity: 0.9;
     transform: translateY(-1px);
 }
 
-.read-more:focus,
-.original-link:focus {
-    outline: 2px solid #3498db;
-    outline-offset: 2px;
-}
-
-/* 상세 페이지 스타일 */
-.article-detail {
-    background: white;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.back-btn {
-    display: inline-block;
-    margin-bottom: 20px;
-    color: #2980b9;
-    text-decoration: underline;
-    font-weight: 500;
-}
-
-.back-btn:hover {
-    color: #2471a3;
-}
-
-.back-btn:focus {
-    outline: 2px solid #3498db;
-    outline-offset: 2px;
-}
-
-.content {
-    margin: 20px 0;
-    line-height: 1.8;
-    color: #444;
-}
-
-.source-link {
+.pagination {
     margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.page-link {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #3498db;
+    background: white;
+    transition: all 0.3s;
+}
+
+.page-link:hover {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.page-info {
+    margin: 0 10px;
+    color: #666;
+    font-size: 0.9em;
 }
 
 .error {
     text-align: center;
     padding: 40px;
     color: #e74c3c;
-    background: #fdf3f2;
-    border-radius: 8px;
-    border: 1px solid #f5b7b1;
 }
 
-/* 반응형 디자인 */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
@@ -181,40 +153,8 @@ h1 {
     .original-link {
         text-align: center;
     }
-}
 
-/* 접근성 개선을 위한 키보드 포커스 스타일 */
-*:focus {
-    outline: 2px solid #3498db;
-    outline-offset: 2px;
-}
-
-/* 다크 모드 지원 */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1a1a1a;
-        color: #f5f5f5;
-    }
-
-    .feed-item {
-        background: #2c2c2c;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-
-    .title-link {
-        color: #f5f5f5;
-    }
-
-    .description {
-        color: #e0e0e0;
-    }
-
-    .meta {
-        color: #b0b0b0;
-    }
-
-    .error {
-        background: #2c2c2c;
-        border-color: #e74c3c;
+    .pagination {
+        margin-top: 20px;
     }
 }
