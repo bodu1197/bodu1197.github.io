@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스웨디시 마사지 정보</title>
     <meta name="description" content="스웨디시 마사지 관련 최신 정보 및 뉴스">
-    <meta name="google-site-verification" content="skhLXabR_DQ3dD44qCtElmE6KPevrQ_W-YHjFRmLZKU" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +21,7 @@
     </div>
 
     <script>
-        const ITEMS_PER_PAGE = 30; // 한 페이지당 30개 글
+        const ITEMS_PER_PAGE = 30;
 
         async function loadArticles() {
             const container = document.getElementById('feed-container');
@@ -37,7 +36,6 @@
                 const endIndex = startIndex + ITEMS_PER_PAGE;
                 const totalPages = Math.ceil(data.articles.length / ITEMS_PER_PAGE);
                 
-                // 현재 페이지의 글만 표시
                 const currentArticles = data.articles.slice(startIndex, endIndex);
                 
                 currentArticles.forEach(article => {
@@ -63,7 +61,6 @@
                     `;
                 });
 
-                // 페이지네이션 UI 추가
                 container.innerHTML += `
                     <div class="pagination">
                         ${currentPage > 1 ? `<a href="?page=${currentPage - 1}" class="page-link">이전</a>` : ''}
@@ -84,15 +81,10 @@
 
         async function updateVisitors() {
             try {
-                const currentPage = window.location.pathname;
-                const isArticle = currentPage.includes('article.html');
-                const articleId = isArticle ? new URLSearchParams(window.location.search).get('id') : null;
-                
                 const response = await fetch('visitors.json');
                 const data = await response.json();
                 
                 const today = new Date().toISOString().split('T')[0];
-                const pageKey = isArticle ? `article-${articleId}` : 'index';
                 
                 const updateData = {
                     total: data.total + 1,
@@ -102,12 +94,11 @@
                     },
                     pages: {
                         ...data.pages,
-                        [pageKey]: (data.pages[pageKey] || 0) + 1
+                        'index': (data.pages['index'] || 0) + 1
                     },
                     lastUpdated: today
                 };
 
-                // GitHub API로 업데이트
                 await fetch('https://api.github.com/repos/bodu1197/swedish-rss/contents/visitors.json', {
                     method: 'PUT',
                     headers: {
@@ -115,13 +106,12 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        message: `Update visitor count for ${pageKey}`,
+                        message: 'Update visitor count',
                         content: btoa(JSON.stringify(updateData, null, 2)),
                         sha: data.sha
                     })
                 });
 
-                // 방문자 수 표시
                 document.getElementById('total-visitors').textContent = updateData.total.toLocaleString();
                 document.getElementById('today-visitors').textContent = (updateData.daily[today] || 0).toLocaleString();
             } catch (error) {
