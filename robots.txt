@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bodu1197.github.io/swedish-rss/sitemap.xml
