@@ -102,8 +102,9 @@
                 await fetch('https://api.github.com/repos/bodu1197/swedish-rss/contents/visitors.json', {
                     method: 'PUT',
                     headers: {
-                        'Authorization': 'token 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',
+                        'Authorization': 'Bearer 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',
                         'Content-Type': 'application/json',
+                        'Accept': 'application/vnd.github.v3+json'
                     },
                     body: JSON.stringify({
                         message: 'Update visitor count',
