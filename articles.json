@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "id": "sample-article",
+      "title": "샘플 글입니다",
+      "description": "이 글은 자동으로 업데이트될 예정입니다.",
+      "content": "RSS 피드가 업데이트되면 이 내용은 자동으로 변경됩니다.",
+      "date": "2024-03-20T00:00:00Z",
+      "originalLink": "https://swedish24.co.kr/sample",
+      "source": "swedish24",
+      "slug": "sample-article"
+    }
+  ]
+}
