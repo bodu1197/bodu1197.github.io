@@ -23,6 +23,30 @@ h1 {
     color: #2c3e50;
 }
 
+.visitor-counter {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.visitor-box {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.visitor-box strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.divider {
+    margin: 0 10px;
+    color: #ddd;
+}
+
 .feed-item {
     background: white;
     border-radius: 8px;
@@ -143,6 +167,11 @@ h1 {
 
     h1 {
         font-size: 1.5em;
+    }
+
+    .visitor-counter {
+        margin: 15px 0;
+        font-size: 0.85em;
     }
 
     .actions {
