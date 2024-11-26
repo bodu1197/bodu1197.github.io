@@ -1,0 +1,33 @@
+name: Fetch RSS Feed
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install rss-parser
+
+      - name: Fetch RSS feeds
+        run: node fetch-rss.js
+        
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add articles.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update RSS feeds"
+          git push
