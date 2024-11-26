@@ -25,9 +25,7 @@
                     container.innerHTML += `
                         <div class="feed-item">
                             <h2>
-                                <a href="article.html?id=${article.slug}" 
-                                   class="title-link" 
-                                   aria-label="글 제목: ${article.title}">
+                                <a href="article.html?id=${article.slug}" class="title-link">
                                     ${article.title}
                                 </a>
                             </h2>
@@ -37,16 +35,8 @@
                             </div>
                             <div class="description">${article.description}</div>
                             <div class="actions">
-                                <a href="article.html?id=${article.slug}" 
-                                   class="read-more" 
-                                   aria-label="'${article.title}' 글 상세보기">
-                                    상세보기
-                                </a>
-                                <a href="${article.originalLink}" 
-                                   class="original-link" 
-                                   target="_blank" 
-                                   rel="noopener noreferrer" 
-                                   aria-label="'${article.title}' 원문 사이트에서 보기">
+                                <a href="article.html?id=${article.slug}" class="read-more">상세보기</a>
+                                <a href="${article.originalLink}" class="original-link" target="_blank" rel="noopener noreferrer">
                                     원문보기
                                 </a>
                             </div>
@@ -56,7 +46,7 @@
             } catch (error) {
                 console.error('글 목록 로딩 실패:', error);
                 container.innerHTML = `
-                    <div class="error" role="alert">
+                    <div class="error">
                         <h2>글 목록을 불러오는데 실패했습니다</h2>
                         <p>잠시 후 다시 시도해주세요.</p>
                     </div>
