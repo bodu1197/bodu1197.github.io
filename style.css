@@ -35,14 +35,19 @@ h1 {
     margin-bottom: 10px;
 }
 
-.feed-item h2 a {
+.title-link {
     color: #2c3e50;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color 0.3s;
 }
 
-.feed-item h2 a:hover {
+.title-link:hover {
     color: #3498db;
+}
+
+.title-link:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
 }
 
 .meta {
@@ -57,11 +62,13 @@ h1 {
 
 .source {
     color: #3498db;
+    font-weight: 500;
 }
 
 .description {
     margin: 15px 0;
     line-height: 1.8;
+    color: #444;
 }
 
 .actions {
@@ -70,32 +77,43 @@ h1 {
     gap: 10px;
 }
 
-.read-more, .original-link {
+.read-more, 
+.original-link {
     padding: 8px 15px;
     text-decoration: none;
     border-radius: 4px;
     font-size: 0.9em;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
+    text-decoration: underline;
 }
 
 .read-more {
-    background-color: #3498db;
+    background-color: #2980b9;
     color: white;
 }
 
 .original-link {
-    background-color: #f8f9fa;
-    color: #666;
+    background-color: #34495e;
+    color: white;
 }
 
 .read-more:hover {
-    background-color: #2980b9;
+    background-color: #2471a3;
+    transform: translateY(-1px);
 }
 
 .original-link:hover {
-    background-color: #e9ecef;
+    background-color: #2c3e50;
+    transform: translateY(-1px);
 }
 
+.read-more:focus,
+.original-link:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* 상세 페이지 스타일 */
 .article-detail {
     background: white;
     border-radius: 8px;
@@ -106,17 +124,24 @@ h1 {
 .back-btn {
     display: inline-block;
     margin-bottom: 20px;
-    color: #666;
-    text-decoration: none;
+    color: #2980b9;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 .back-btn:hover {
-    color: #333;
+    color: #2471a3;
+}
+
+.back-btn:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
 }
 
 .content {
     margin: 20px 0;
     line-height: 1.8;
+    color: #444;
 }
 
 .source-link {
@@ -129,8 +154,12 @@ h1 {
     text-align: center;
     padding: 40px;
     color: #e74c3c;
+    background: #fdf3f2;
+    border-radius: 8px;
+    border: 1px solid #f5b7b1;
 }
 
+/* 반응형 디자인 */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
@@ -146,5 +175,46 @@ h1 {
 
     .actions {
         flex-direction: column;
+    }
+
+    .read-more,
+    .original-link {
+        text-align: center;
+    }
+}
+
+/* 접근성 개선을 위한 키보드 포커스 스타일 */
+*:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* 다크 모드 지원 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #f5f5f5;
+    }
+
+    .feed-item {
+        background: #2c2c2c;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .title-link {
+        color: #f5f5f5;
+    }
+
+    .description {
+        color: #e0e0e0;
+    }
+
+    .meta {
+        color: #b0b0b0;
+    }
+
+    .error {
+        background: #2c2c2c;
+        border-color: #e74c3c;
     }
 }
