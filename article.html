@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="article-header">
-            <a href="https://bodu1197.github.io/swedish-rss/" class="back-link">← 목록으로</a>
+            <a href="/" class="back-link">← 목록으로</a>
         </div>
         <div id="article-container"></div>
     </div>
@@ -71,34 +71,10 @@
                 const response = await fetch('visitors.json');
                 const data = await response.json();
                 
-                const today = new Date().toISOString().split('T')[0];
-                const pageKey = `article-${articleId}`;
+                // 방문자 수만 증가
+                data.total += 1;
+                data.today += 1;
                 
-                const updateData = {
-                    total: data.total + 1,
-                    daily: {
-                        ...data.daily,
-                        [today]: (data.daily[today] || 0) + 1
-                    },
-                    pages: {
-                        ...data.pages,
-                        [pageKey]: (data.pages[pageKey] || 0) + 1
-                    },
-                    lastUpdated: today
-                };
-
-                await fetch('https://api.github.com/repos/bodu1197/swedish-rss/contents/visitors.json', {
-                    method: 'PUT',
-                    headers: {
-                        'Authorization': 'token YOUR_GITHUB_TOKEN',
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        message: `Update visitor count for article ${articleId}`,
-                        content: btoa(JSON.stringify(updateData, null, 2)),
-                        sha: data.sha
-                    })
-                });
             } catch (error) {
                 console.error('방문자 수 업데이트 실패:', error);
             }
