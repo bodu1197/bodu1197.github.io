@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스웨디시 마사지 정보</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container article-detail">
+        <a href="index.html" class="back-btn">← 목록으로</a>
+        <article id="articleContent"></article>
+    </div>
+
+    <script>
+        async function loadArticle() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const articleId = urlParams.get('id');
+            
+            try {
+                const response = await fetch('articles.json');
+                const data = await response.json();
+                const article = data.articles.find(item => item.slug === articleId);
+                
+                if (article) {
+                    document.title = `${article.title} - 스웨디시 마사지 정보`;
+                    
+                    const metaDesc = document.querySelector('meta[name="description"]');
+                    metaDesc.setAttribute('content', article.description);
+                    
+                    const canonical = document.createElement('link');
+                    canonical.setAttribute('rel', 'canonical');
+                    canonical.setAttribute('href', article.originalLink);
+                    document.head.appendChild(canonical);
+                    
+                    document.getElementById('articleContent').innerHTML = `
+                        <h1>${article.title}</h1>
+                        <div class="meta">
+                            <span class="date">${new Date(article.date).toLocaleDateString('ko-KR')}</span>
+                            <span class="source">${article.source}</span>
+                        </div>
+                        <div class="content">${article.content}</div>
+                        <div class="source-link">
+                            <a href="${article.originalLink}" target="_blank" rel="noopener noreferrer">
+                                원문 보기 →
+                            </a>
+                        </div>
+                    `;
+                } else {
+                    document.getElementById('articleContent').innerHTML = `
+                        <div class="error">
+                            <h1>글을 찾을 수 없습니다</h1>
+                            <p>요청하신 글이 존재하지 않거나 삭제되었을 수 있습니다.</p>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('글 로딩 실패:', error);
+                document.getElementById('articleContent').innerHTML = `
+                    <div class="error">
+                        <h1>오류가 발생했습니다</h1>
+                        <p>글을 불러오는 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요.</p>
+                    </div>
+                `;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadArticle);
+    </script>
+</body>
+</html>
