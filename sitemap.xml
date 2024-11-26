@@ -6,13 +6,9 @@
     <url>
         <loc>https://bodu1197.github.io/swedish-rss/</loc>
         <lastmod>2024-01-27</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://bodu1197.github.io/swedish-rss/article.html</loc>
         <lastmod>2024-01-27</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
     </url>
 </urlset>
