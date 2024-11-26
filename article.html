@@ -3,66 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스웨디시 마사지 정보</title>
-    <meta name="description" content="">
+    <title>스웨디시 마사지 정보 - 상세보기</title>
+    <meta name="description" content="스웨디시 마사지 관련 최신 정보 및 뉴스">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container article-detail">
-        <a href="index.html" class="back-btn">← 목록으로</a>
-        <article id="articleContent"></article>
+    <div class="container">
+        <div class="article-header">
+            <a href="/" class="back-link">← 목록으로</a>
+        </div>
+        <div id="article-container"></div>
     </div>
 
     <script>
         async function loadArticle() {
+            const container = document.getElementById('article-container');
             const urlParams = new URLSearchParams(window.location.search);
             const articleId = urlParams.get('id');
             
             try {
                 const response = await fetch('articles.json');
                 const data = await response.json();
-                const article = data.articles.find(item => item.slug === articleId);
+                
+                const article = data.articles.find(a => a.slug === articleId);
                 
                 if (article) {
                     document.title = `${article.title} - 스웨디시 마사지 정보`;
                     
-                    const metaDesc = document.querySelector('meta[name="description"]');
-                    metaDesc.setAttribute('content', article.description);
-                    
-                    const canonical = document.createElement('link');
-                    canonical.setAttribute('rel', 'canonical');
-                    canonical.setAttribute('href', article.originalLink);
-                    document.head.appendChild(canonical);
-                    
-                    document.getElementById('articleContent').innerHTML = `
-                        <h1>${article.title}</h1>
-                        <div class="meta">
-                            <span class="date">${new Date(article.date).toLocaleDateString('ko-KR')}</span>
-                            <span class="source">${article.source}</span>
-                        </div>
-                        <div class="content">${article.content}</div>
-                        <div class="source-link">
-                            <a href="${article.originalLink}" target="_blank" rel="noopener noreferrer">
-                                원문 보기 →
-                            </a>
-                        </div>
+                    container.innerHTML = `
+                        <article class="article-content">
+                            <h1>${article.title}</h1>
+                            <div class="meta">
+                                <span class="date">${new Date(article.date).toLocaleDateString('ko-KR')}</span>
+                                <span class="source">${article.source}</span>
+                            </div>
+                            <div class="content">${article.content}</div>
+                            <div class="actions">
+                                <a href="${article.originalLink}" class="original-link" target="_blank" rel="noopener noreferrer">
+                                    원문 보기
+                                </a>
+                            </div>
+                        </article>
                     `;
+
+                    // 방문자 카운팅 실행
+                    updateVisitors(articleId);
                 } else {
-                    document.getElementById('articleContent').innerHTML = `
+                    container.innerHTML = `
                         <div class="error">
-                            <h1>글을 찾을 수 없습니다</h1>
-                            <p>요청하신 글이 존재하지 않거나 삭제되었을 수 있습니다.</p>
+                            <h2>글을 찾을 수 없습니다</h2>
+                            <p>요청하신 글이 존재하지 않습니다.</p>
                         </div>
                     `;
                 }
             } catch (error) {
                 console.error('글 로딩 실패:', error);
-                document.getElementById('articleContent').innerHTML = `
+                container.innerHTML = `
                     <div class="error">
-                        <h1>오류가 발생했습니다</h1>
-                        <p>글을 불러오는 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요.</p>
+                        <h2>글을 불러오는데 실패했습니다</h2>
+                        <p>잠시 후 다시 시도해주세요.</p>
                     </div>
                 `;
+            }
+        }
+
+        async function updateVisitors(articleId) {
+            try {
+                const response = await fetch('visitors.json');
+                const data = await response.json();
+                
+                const today = new Date().toISOString().split('T')[0];
+                const pageKey = `article-${articleId}`;
+                
+                const updateData = {
+                    total: data.total + 1,
+                    daily: {
+                        ...data.daily,
+                        [today]: (data.daily[today] || 0) + 1
+                    },
+                    pages: {
+                        ...data.pages,
+                        [pageKey]: (data.pages[pageKey] || 0) + 1
+                    },
+                    lastUpdated: today
+                };
+
+                await fetch('https://api.github.com/repos/bodu1197/swedish-rss/contents/visitors.json', {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': 'token YOUR_GITHUB_TOKEN',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: `Update visitor count for article ${articleId}`,
+                        content: btoa(JSON.stringify(updateData, null, 2)),
+                        sha: data.sha
+                    })
+                });
+            } catch (error) {
+                console.error('방문자 수 업데이트 실패:', error);
             }
         }
 
