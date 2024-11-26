@@ -2,7 +2,7 @@ const Parser = require('rss-parser');
 const fs = require('fs');
 
 const parser = new Parser();
-const RSS_URL = 'https://swedish24.co.kr/rss';
+const RSS_URL = 'https://magirl.co.kr/rss.php';
 
 async function generateSlug(title, link) {
     // URL에서 마지막 숫자만 추출
