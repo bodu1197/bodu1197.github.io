@@ -14,14 +14,25 @@
     </div>
 
     <script>
+        const ITEMS_PER_PAGE = 30; // 한 페이지당 30개 글
+
         async function loadArticles() {
             const container = document.getElementById('feed-container');
+            const urlParams = new URLSearchParams(window.location.search);
+            const currentPage = parseInt(urlParams.get('page')) || 1;
             
             try {
                 const response = await fetch('articles.json');
                 const data = await response.json();
                 
-                data.articles.forEach(article => {
+                const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+                const endIndex = startIndex + ITEMS_PER_PAGE;
+                const totalPages = Math.ceil(data.articles.length / ITEMS_PER_PAGE);
+                
+                // 현재 페이지의 글만 표시
+                const currentArticles = data.articles.slice(startIndex, endIndex);
+                
+                currentArticles.forEach(article => {
                     container.innerHTML += `
                         <div class="feed-item">
                             <h2>
@@ -43,6 +54,15 @@
                         </div>
                     `;
                 });
+
+                // 페이지네이션 UI 추가
+                container.innerHTML += `
+                    <div class="pagination">
+                        ${currentPage > 1 ? `<a href="?page=${currentPage - 1}" class="page-link">이전</a>` : ''}
+                        <span class="page-info">${currentPage} / ${totalPages} 페이지</span>
+                        ${currentPage < totalPages ? `<a href="?page=${currentPage + 1}" class="page-link">다음</a>` : ''}
+                    </div>
+                `;
             } catch (error) {
                 console.error('글 목록 로딩 실패:', error);
                 container.innerHTML = `
