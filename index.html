@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스웨디시 마사지 정보</title>
+    <meta name="description" content="스웨디시 마사지 관련 최신 정보 및 뉴스">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>스웨디시 마사지 정보</h1>
+        <div id="feed-container"></div>
+    </div>
+
+    <script>
+        async function loadArticles() {
+            const container = document.getElementById('feed-container');
+            
+            try {
+                const response = await fetch('articles.json');
+                const data = await response.json();
+                
+                data.articles.forEach(article => {
+                    container.innerHTML += `
+                        <div class="feed-item">
+                            <h2>
+                                <a href="article.html?id=${article.slug}" class="title-link">
+                                    ${article.title}
+                                </a>
+                            </h2>
+                            <div class="meta">
+                                <span class="date">${new Date(article.date).toLocaleDateString('ko-KR')}</span>
+                                <span class="source">${article.source}</span>
+                            </div>
+                            <div class="description">${article.description}</div>
+                            <div class="actions">
+                                <a href="article.html?id=${article.slug}" class="read-more">상세보기</a>
+                                <a href="${article.originalLink}" class="original-link" target="_blank" rel="noopener noreferrer">
+                                    원문보기
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                });
+            } catch (error) {
+                console.error('글 목록 로딩 실패:', error);
+                container.innerHTML = `
+                    <div class="error">
+                        <h2>글 목록을 불러오는데 실패했습니다</h2>
+                        <p>잠시 후 다시 시도해주세요.</p>
+                    </div>
+                `;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadArticles);
+    </script>
+</body>
+</html>
