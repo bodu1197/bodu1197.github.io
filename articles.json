@@ -1,14 +1,304 @@
 {
   "articles": [
     {
-      "id": "sample-article",
-      "title": "샘플 글입니다",
-      "description": "이 글은 자동으로 업데이트될 예정입니다.",
-      "content": "RSS 피드가 업데이트되면 이 내용은 자동으로 변경됩니다.",
-      "date": "2024-03-20T00:00:00Z",
-      "originalLink": "https://swedish24.co.kr/sample",
+      "id": "https://swedish24.co.kr/community/12678058",
+      "title": "믿고가보세요",
+      "description": "관리사님 손길이 너무 예술이라 감동먹고 갑니다\n 앞으로는 여기만 다닐거같네요..\n 무거웠던 몸으로 들어왔지만 나갈때는 아주 가벼운몸으로 나가게되어 뿌듯하네요\n 블랙로즈로 정착할거같습니다^^",
+      "content": "<p>관리사님 손길이 너무 예술이라 감동먹고 갑니다<br /> 앞으로는 여기만 다닐거같네요..<br /> 무거웠던 몸으로 들어왔지만 나갈때는 아주 가벼운몸으로 나가게되어 뿌듯하네요<br /> 블랙로즈로 정착할거같습니다^^</p>",
+      "date": "Tue, 26 Nov 2024 18:24:52 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12678058",
       "source": "swedish24",
-      "slug": "sample-article"
+      "slug": "https://swedish24.co.kr/community/12678058"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12676319",
+      "title": "카페가입은 걸리면 큰일나서 여기에 후기 남겨봐요",
+      "description": "시설 깔끔하고 각 방 샤워실 좋았습니다 사장님 친절하시고\n 관리사분 교육에 진심인가 보네요ㅎ 이렇게 마인드 좋고 정성스런 관리는\n 진짜 오랜만에 받아보네요 잘 받고 갑니다",
+      "content": "<p>시설 깔끔하고 각 방 샤워실 좋았습니다 사장님 친절하시고</p> <p>관리사분 교육에 진심인가 보네요ㅎ 이렇게 마인드 좋고 정성스런 관리는</p> <p>진짜 오랜만에 받아보네요 잘 받고 갑니다 </p>",
+      "date": "Tue, 26 Nov 2024 17:40:25 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12676319",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12676319"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12675150",
+      "title": "굿~",
+      "description": "수지쌤~ 잘받고 갑니다요 ㅎㅎ",
+      "content": "<p>수지쌤~ 잘받고 갑니다요 ㅎㅎ</p>",
+      "date": "Tue, 26 Nov 2024 17:25:15 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12675150",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12675150"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12674975",
+      "title": "ㄷㄷ",
+      "description": "관리실력 무슨일인가요ㅎㅎ 와 너무너무 잘받고가요 감동",
+      "content": "<p>관리실력 무슨일인가요ㅎㅎ 와 너무너무 잘받고가요 감동</p>",
+      "date": "Tue, 26 Nov 2024 17:23:31 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12674975",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12674975"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12674128",
+      "title": "미테라피 만만세",
+      "description": "비올때 한번 방문했는데\n 따뜻하게 반겨줘서 외롭지 않게 받고 왔습니다~",
+      "content": "<p>비올때 한번 방문했는데</p> <p>따뜻하게 반겨줘서 외롭지 않게 받고 왔습니다~ </p>",
+      "date": "Tue, 26 Nov 2024 17:11:57 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12674128",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12674128"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12672691",
+      "title": "굿이용ㅎㅎ",
+      "description": "은우관리사 매우 친절하시고 \n 관리가 좋앗어여 \n 다시 찾아갈 의사 있어여ㅎㅎ",
+      "content": "<p>은우관리사 매우 친절하시고 <br /> 관리가 좋앗어여 <br /> 다시 찾아갈 의사 있어여ㅎㅎ</p>",
+      "date": "Tue, 26 Nov 2024 16:48:36 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12672691",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12672691"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12672685",
+      "title": "가성비가 아주 그냥~",
+      "description": "가성비 좋은 샵입니다. \n 편안하고 차분한 분위기 입니다\n 나은쌤한테 받았는데\n 이쁘시고 마사지도 좋고\n 괜찮네요~\n 사이트보고 갔는데 좋았습니다\n 중독성 있습니다\n 재방 예정입니다^^",
+      "content": "<p>가성비 좋은 샵입니다. <br /> 편안하고 차분한 분위기 입니다<br /> 나은쌤한테 받았는데<br /> 이쁘시고 마사지도 좋고<br /> 괜찮네요~<br /> 사이트보고 갔는데 좋았습니다<br /> 중독성 있습니다<br /> 재방 예정입니다^^</p>",
+      "date": "Tue, 26 Nov 2024 16:48:01 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12672685",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12672685"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12672635",
+      "title": "유테라피 별별별 한별",
+      "description": "역시 유테라피에서는 한별쌤이 최고인거같습니다\n 관리가 정말 이게 스웨디시지..라는 말이 그냥 튀어나오네요\n 정말 천상계 관리십니다 안받아보신분이 있으시다면 \n 꼭 받아보는걸 추천드려요\n 관리만 잘하시는게 아닙니다 오r꾸 몸a 솨이즈 \n 뭐하나 빠지는게 없이 완벽하신 분이시네요\n 다음 방문이 벌써 기다려지는 한별쌤입니다",
+      "content": "<p>역시 유테라피에서는 한별쌤이 최고인거같습니다<br /> 관리가 정말 이게 스웨디시지..라는 말이 그냥 튀어나오네요<br /> 정말 천상계 관리십니다 안받아보신분이 있으시다면 <br /> 꼭 받아보는걸 추천드려요<br /> 관리만 잘하시는게 아닙니다 오r꾸 몸a 솨이즈 <br /> 뭐하나 빠지는게 없이 완벽하신 분이시네요<br /> 다음 방문이 벌써 기다려지는 한별쌤입니다<br /> </p>",
+      "date": "Tue, 26 Nov 2024 16:44:28 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12672635",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12672635"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12672575",
+      "title": "강추 또 강추",
+      "description": "가을쌤한테 받았습니다 진짜 여러군데 많이 다녀봤지만 이만한곳 절대 없습니다 또 가고 또 가세요 여러분 돈 아깝지않습니다",
+      "content": "<p>가을쌤한테 받았습니다 진짜 여러군데 많이 다녀봤지만 이만한곳 절대 없습니다 또 가고 또 가세요 여러분 돈 아깝지않습니다</p>",
+      "date": "Tue, 26 Nov 2024 16:42:20 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12672575",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12672575"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12669517",
+      "title": "역대급 맛집다녀왔습니다",
+      "description": "후 기 가 좋 아 서 방 문 했 는 데 역 시 매 장 들 어 서 자 마 자 좋 은 냄 새 가 나 더 군 요 ~\n 실 장 님 도 친 절 하 시 고 관 리 사 는 말 해 뭐 해 친 절 함 굿 굿 전 체 적 으 로 매 우 매 우 완 벽 한 시 간 이 였 습 니 다\n 시 간 이 너 무 빨 리 지 나 간 것 같 아 서 연 장 하 고 싶 었 지 만 ... 뒤 에 예 약 이 ㅜ 역 시 손 님 이 많 은 이 유 를 알 것 같 네 요 !! 잘 관 리 받 고 갑 니 다 !! 또 뵐 게 요 !!",
+      "content": "<p>후 기 가 좋 아 서 방 문 했 는 데 역 시 매 장 들 어 서 자 마 자 좋 은 냄 새 가 나 더 군 요 ~</p> <p>실 장 님 도 친 절 하 시 고 관 리 사 는 말 해 뭐 해 친 절 함 굿 굿 전 체 적 으 로 매 우 매 우 완 벽 한 시 간 이 였 습 니 다</p> <p>시 간 이 너 무 빨 리 지 나 간 것 같 아 서 연 장 하 고 싶 었 지 만 ... 뒤 에 예 약 이 ㅜ 역 시 손 님 이 많 은 이 유 를 알 것 같 네 요 !! 잘 관 리 받 고 갑 니 다 !! 또 뵐 게 요 !!</p>",
+      "date": "Tue, 26 Nov 2024 16:00:49 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12669517",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12669517"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12668620",
+      "title": "아율이 짱 !!",
+      "description": "너무 좋았어요 역대급,,,",
+      "content": "<p>너무 좋았어요 역대급,,,</p>",
+      "date": "Tue, 26 Nov 2024 15:50:00 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12668620",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12668620"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12668617",
+      "title": "진심을 담아서",
+      "description": "진심을 담아서 생각해주시는 마음이 좋으셔요.\n소정이지만 작은 팁을 드리니 아이처럼 기뻐하는 모습을 보니 내심 뿌듯하고 좋았습니다.\n꽃 같은 샘, 향기로운 마음을 가진 샘, 항상 웃으셨으면 좋겠어요~ 화이팅^^!",
+      "content": "진심을 담아서 생각해주시는 마음이 좋으셔요.<p>소정이지만 작은 팁을 드리니 아이처럼 기뻐하는 모습을 보니 내심 뿌듯하고 좋았습니다.</p><p>꽃 같은 샘, 향기로운 마음을 가진 샘, 항상 웃으셨으면 좋겠어요~ 화이팅^^!</p>",
+      "date": "Tue, 26 Nov 2024 15:49:57 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12668617",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12668617"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12668575",
+      "title": "재방의사 완전 있습니다ㅋ",
+      "description": "어려보이시는데 ㅅㅋ이 남다르셔서 놀랐네여ㅋㅋ\n사이쥬도 전체적으로 좋구 재방의사 완전 있습니다ㅋ",
+      "content": "어려보이시는데 ㅅㅋ이 남다르셔서 놀랐네여ㅋㅋ<p>사이쥬도 전체적으로 좋구 재방의사 완전 있습니다ㅋ</p>",
+      "date": "Tue, 26 Nov 2024 15:49:34 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12668575",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12668575"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12668550",
+      "title": "특유의 마사지실력",
+      "description": "특유의 마사지실력에 오늘따라 유독 분위기가 좋아서\n한탐더연장했는데 돈이아깝지않은 시간이었어요\n다들 한번 보시면 헤어나오기 힘드실거에요ㅎㅎ",
+      "content": "특유의 마사지실력에 오늘따라 유독 분위기가 좋아서<p>한탐더연장했는데 돈이아깝지않은 시간이었어요</p><p>다들 한번 보시면 헤어나오기 힘드실거에요ㅎㅎ</p>",
+      "date": "Tue, 26 Nov 2024 15:49:13 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12668550",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12668550"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12668504",
+      "title": "돌핀뉴풰이스 나비",
+      "description": "몸도 여기저기 쑤셔 함 풀러나가자하고\n 돌핀에 콜 넣어봅니다!!\n 실장님에게 섭스 좋은분으로 추천 받아봄ㅋ\n 나비씨가 좋을거라하여 오키! 믿고 예약하고 달려갑니다!\n 도착해서 커피 하나 사들고 배정받은 방으로 입실!!\n 너무 괜찮았어요 ㅎㅎ 진짜 사근사근 너무 잘해주셔서 감사합니다",
+      "content": "<p>몸도 여기저기 쑤셔 함 풀러나가자하고</p> <p>돌핀에 콜 넣어봅니다!!</p> <p>실장님에게 섭스 좋은분으로 추천 받아봄ㅋ</p> <p>나비씨가 좋을거라하여 오키! 믿고 예약하고 달려갑니다!</p> <p>도착해서 커피 하나 사들고 배정받은 방으로 입실!!</p> <p>너무 괜찮았어요 ㅎㅎ 진짜 사근사근 너무 잘해주셔서 감사합니다</p>",
+      "date": "Tue, 26 Nov 2024 15:48:19 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12668504",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12668504"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12668492",
+      "title": "리액션도 좋으셔서 너무 좋았어여 ㅎㅎ",
+      "description": "관리받으면서 이런저런 얘기하는데 대화도 잘통하고\n리액션도 좋으셔서 너무 좋았어여 ㅎㅎ\n반전으로 관리를 엄청잘하시고 돈이 아깝지않은\n아주 만족스러운시간 보내고왔습니다 ㅎㅎ",
+      "content": "관리받으면서 이런저런 얘기하는데 대화도 잘통하고<p>리액션도 좋으셔서 너무 좋았어여 ㅎㅎ</p><p>반전으로 관리를 엄청잘하시고 돈이 아깝지않은</p><p>아주 만족스러운시간 보내고왔습니다 ㅎㅎ</p>",
+      "date": "Tue, 26 Nov 2024 15:48:00 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12668492",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12668492"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12668431",
+      "title": "잘맞고 재밌어서 좋았어요ㅋㅋㅋ",
+      "description": "대화나누는게 재미있어서 많이 나눴는데 잘맞고 재밌어서 좋았어요ㅋㅋㅋ 성격도 활발하셔서 점점 관리쌤 매력에 빠져들었는지 10분지난거같은데 시간이 벌써 1시간 지나서 깜짝놀랐네요ㅋㅋㅋ 넘 즐거운시간보내고왔어요 감사합니다!!",
+      "content": "<p>대화나누는게 재미있어서 많이 나눴는데 잘맞고 재밌어서 좋았어요ㅋㅋㅋ 성격도 활발하셔서 점점 관리쌤 매력에 빠져들었는지 10분지난거같은데 시간이 벌써 1시간 지나서 깜짝놀랐네요ㅋㅋㅋ 넘 즐거운시간보내고왔어요 감사합니다!!</p>",
+      "date": "Tue, 26 Nov 2024 15:47:33 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12668431",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12668431"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12668418",
+      "title": "진짜 세심하고 성의있게",
+      "description": "진짜 세심하고 성의있게 관리해주시네요\n외적인것도 그렇고 관리까지 퍼펙트하셔서 \n너무 좋았어요",
+      "content": "진짜 세심하고 성의있게 관리해주시네요<p>외적인것도 그렇고 관리까지 퍼펙트하셔서 </p><p>너무 좋았어요</p>",
+      "date": "Tue, 26 Nov 2024 15:47:10 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12668418",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12668418"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12667865",
+      "title": "진짜 다녀본 곳중에 제일인 원탑 다정",
+      "description": "다녀본 곳중에 제일 원ㅇ탑인 다정\n 운 좋게 다정쌤 보게 되었는데 아이돌이 들어온줄 알았네여;;\n 손ㅇ길은 얼마나 야무진지 살짝 닿았는데도 짜ㅇ릿함\n 내가 왜 이제 여길 왔는지 좀 더 빨리 알았다면..\n 리얼 후기로 걍 대. 추. 천 \n 외ㅇ모 ㅇ손ㅇ길 성ㅇ격 분위기 빠지는게 없음 \n 쿠ㅇ폰 같은거 있었더라면 100장은 그냥 모았을듯 ㅋㅋㅋ\n 가게도 깔ㅇ끔하고 괜찮은 편이였고 빠른 시일에 또 갈게요\n 그때도 다정쌤 있었으면 좋겠다",
+      "content": "<p>다녀본 곳중에 제일 원ㅇ탑인 다정</p> <p>운 좋게 다정쌤 보게 되었는데 아이돌이 들어온줄 알았네여;;<br /> 손ㅇ길은 얼마나 야무진지 살짝 닿았는데도 짜ㅇ릿함<br /> 내가 왜 이제 여길 왔는지 좀 더 빨리 알았다면..<br /> 리얼 후기로 걍 대. 추. 천 <br /> 외ㅇ모 ㅇ손ㅇ길 성ㅇ격 분위기 빠지는게 없음 <br /> 쿠ㅇ폰 같은거 있었더라면 100장은 그냥 모았을듯 ㅋㅋㅋ<br /> 가게도 깔ㅇ끔하고 괜찮은 편이였고 빠른 시일에 또 갈게요<br /> 그때도 다정쌤 있었으면 좋겠다 <br /> </p>",
+      "date": "Tue, 26 Nov 2024 15:39:02 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12667865",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12667865"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12667622",
+      "title": "지렸다리",
+      "description": "너무 잘해주시니까 시원하게 지려버렸습니다 진짜 ㅋㅋ\n 친구랑 둘이 같이 갔는데 친구도 만족했다고 합니다",
+      "content": "<p>너무 잘해주시니까 시원하게 지려버렸습니다 진짜 ㅋㅋ<br /> 친구랑 둘이 같이 갔는데 친구도 만족했다고 합니다</p>",
+      "date": "Tue, 26 Nov 2024 15:34:57 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12667622",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12667622"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12667570",
+      "title": "너무좋았어요",
+      "description": "관리사분 진짜 이쁘신대 친절하고 스웨디시 제대로해주시네여\n 뜨끈한 오일로 부드럽게 해주시는데 진짜 피로가 다 녹아버렸어요 ㅋㅋ\n 재방문 무조건할것같네여 너무 좋았어요",
+      "content": "<p>관리사분 진짜 이쁘신대 친절하고 스웨디시 제대로해주시네여</p> <p>뜨끈한 오일로 부드럽게 해주시는데 진짜 피로가 다 녹아버렸어요 ㅋㅋ</p> <p>재방문 무조건할것같네여 너무 좋았어요</p> <p> </p> <p> </p>",
+      "date": "Tue, 26 Nov 2024 15:33:03 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12667570",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12667570"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12662322",
+      "title": "힐링그자체 채린",
+      "description": "채린이 보고왔는데얼.굴 최-상-급 몸.매상-급 관최-상-급\n힐링제대로 하고왔네요 인기쌤인 이유가 진짜 있네요\n역시..는 역시입니다 수원에소 왜유명한지 알것같습니다\n최고최고",
+      "content": "채린이 보고왔는데얼.굴 최-상-급 몸.매상-급 관최-상-급<p>힐링제대로 하고왔네요 인기쌤인 이유가 진짜 있네요</p><p>역시..는 역시입니다 수원에소 왜유명한지 알것같습니다</p><p>최고최고</p>",
+      "date": "Tue, 26 Nov 2024 13:48:09 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12662322",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12662322"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12661998",
+      "title": "극!락!",
+      "description": "여기가 극락......관리사님 초 최강자들.....",
+      "content": "<p>여기가 극락......관리사님 초 최강자들.....</p>",
+      "date": "Tue, 26 Nov 2024 13:40:11 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12661998",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12661998"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12661750",
+      "title": "날이 쌀쌀해져서 자주 다닐예정입니다",
+      "description": "날이 쌀쌀해져서 자주 다닐예정입니다\n 몸과 마음이 따듯해지는 느낌받았아요",
+      "content": "<p>날이 쌀쌀해져서 자주 다닐예정입니다<br /> 몸과 마음이 따듯해지는 느낌받았아요</p>",
+      "date": "Tue, 26 Nov 2024 13:34:11 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12661750",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12661750"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12661695",
+      "title": "너무 좋더라고여 정말잘받았습니다 ㅠㅠ",
+      "description": "너무 좋더라고여 정말잘받았습니다 ㅠㅠ\n 스웨디시는 처음인데 이걸 왜 이제 알았나 싶네요",
+      "content": "<p>너무 좋더라고여 정말잘받았습니다 ㅠㅠ<br /> 스웨디시는 처음인데 이걸 왜 이제 알았나 싶네요</p>",
+      "date": "Tue, 26 Nov 2024 13:32:37 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12661695",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12661695"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12661243",
+      "title": "정상 영업 중입니다.",
+      "description": "☀️11월 26일 정상 영업중입니다.☀️\n ☀️어설픈 매니저는 일을 시키지 않습니다.☀️\n ☀️최선의 만족을 위해 노력합니다.☀️\n ☀️믿고 오는 샾 입니다.☀️\n ☀️전원 출근 하였습니다.☀️\n ☀️항상 회원님들은 만족시킬수 있는 \"세차장\"이 되겠습니다☀️",
+      "content": "<p>☀️11월 26일 정상 영업중입니다.☀️</p> <p>☀️어설픈 매니저는 일을 시키지 않습니다.☀️<br /> ☀️최선의 만족을 위해 노력합니다.☀️<br /> ☀️믿고 오는 샾 입니다.☀️<br /> ☀️전원 출근 하였습니다.☀️</p> <p>☀️항상 회원님들은 만족시킬수 있는 \"세차장\"이 되겠습니다☀️</p>",
+      "date": "Tue, 26 Nov 2024 13:26:43 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12661243",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12661243"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12661032",
+      "title": "스웨디시",
+      "description": "스웨디시 맛집인듯 ㅎㅎㅎ\n 정말 부드럽고 아주 좋았어요",
+      "content": "<p>스웨디시 맛집인듯 ㅎㅎㅎ</p> <p>정말 부드럽고 아주 좋았어요</p>",
+      "date": "Tue, 26 Nov 2024 13:23:46 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12661032",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12661032"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12659807",
+      "title": "유테랖 1등이라 해도 될 듯한 한별쌤",
+      "description": "여지껏 이런 관리는 없었다\n 다들 어느정도 실력이 좋다...^^ 정도였지\n 한별쌤 뵙고 와....진짜 미쳤다 이게 뭐지?\n 이런 느낌은 처음 입니다\n 잘 짜여진 관리프로그램이 정말 매우 좋습니다\n 게다가 ㅁr인드도 좋은 분이셔서 좋은시간 보냈습니다\n 앞으로 그냥 한별쌤은 보이면 무조건 봐야겠네요",
+      "content": "<p>여지껏 이런 관리는 없었다<br /> 다들 어느정도 실력이 좋다...^^ 정도였지<br /> 한별쌤 뵙고 와....진짜 미쳤다 이게 뭐지?<br /> 이런 느낌은 처음 입니다<br /> 잘 짜여진 관리프로그램이 정말 매우 좋습니다<br /> 게다가 ㅁr인드도 좋은 분이셔서 좋은시간 보냈습니다<br /> 앞으로 그냥 한별쌤은 보이면 무조건 봐야겠네요</p>",
+      "date": "Tue, 26 Nov 2024 12:53:24 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12659807",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12659807"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12659764",
+      "title": "유테라피 세경쌤 뵙고 난 새로 태어났다",
+      "description": "친절하고 또 배려깊은 세경쌤\n 한시간 내내 열심히 관리해주시고,\n 또 남는 시간 없이 꼼꼼하게 관리해주시는 모습이\n 굉장히 힐링감을 주시고 또 사뭇 설레게 해주시네요 ㅎ\n 마치 다시 태어난 느낌이랄까...\n 좋은 관리로 좋은시간을 만들어주셔서 또 뵙고 싶네요",
+      "content": "<p>친절하고 또 배려깊은 세경쌤<br /> 한시간 내내 열심히 관리해주시고,<br /> 또 남는 시간 없이 꼼꼼하게 관리해주시는 모습이<br /> 굉장히 힐링감을 주시고 또 사뭇 설레게 해주시네요 ㅎ<br /> 마치 다시 태어난 느낌이랄까...<br /> 좋은 관리로 좋은시간을 만들어주셔서 또 뵙고 싶네요<br /> </p>",
+      "date": "Tue, 26 Nov 2024 12:53:02 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12659764",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12659764"
+    },
+    {
+      "id": "https://swedish24.co.kr/community/12659210",
+      "title": "신비의 손 감촉은 나한테는 너무 자극적이였다",
+      "description": "이..쁜얼굴에 몸..매까지 좋은 신비관리사\n 그 부드러운 ㅅ맛은 아직까지 잊을수가 없습니다\n 적극적으로 제 ㅁ에서 ㅅ으로 댄스를 추시는데\n 저한테는 너무 자극적이였습니다 성격도 좋으시고\n 특히 웃을때 눈웃음이 엄청 매력적이시더라고요\n 비가와서 날씨가 갑자기 추워졌는데 따듯한 ㅅ으로\n 제 ㅁ을 녹여주셔서 감사합니다 신비관리사님",
+      "content": "<p>이..쁜얼굴에 몸..매까지 좋은 신비관리사</p> <p>그 부드러운 ㅅ맛은 아직까지 잊을수가 없습니다</p> <p>적극적으로 제 ㅁ에서 ㅅ으로 댄스를 추시는데</p> <p>저한테는 너무 자극적이였습니다 성격도 좋으시고</p> <p>특히 웃을때 눈웃음이 엄청 매력적이시더라고요</p> <p>비가와서 날씨가 갑자기 추워졌는데 따듯한 ㅅ으로</p> <p>제 ㅁ을 녹여주셔서 감사합니다 신비관리사님</p>",
+      "date": "Tue, 26 Nov 2024 12:46:43 +0900",
+      "originalLink": "https://swedish24.co.kr/community/12659210",
+      "source": "swedish24",
+      "slug": "https://swedish24.co.kr/community/12659210"
     }
   ]
 }
