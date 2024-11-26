@@ -1,0 +1,28 @@
+{
+  "name": "swedish-rss",
+  "version": "1.0.0",
+  "description": "스웨디시 마사지 RSS 뉴스",
+  "main": "index.html",
+  "scripts": {
+    "fetch-rss": "node fetch-rss.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bodu1197/swedish-rss.git"
+  },
+  "keywords": [
+    "rss",
+    "swedish",
+    "massage",
+    "news"
+  ],
+  "author": "bodu1197",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bodu1197/swedish-rss/issues"
+  },
+  "homepage": "https://bodu1197.github.io/swedish-rss",
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}
