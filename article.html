@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="article-header">
-            <a href="/" class="back-link">← 목록으로</a>
+            <a href="https://bodu1197.github.io/swedish-rss/" class="back-link">← 목록으로</a>
         </div>
         <div id="article-container"></div>
     </div>
@@ -71,9 +71,27 @@
                 const response = await fetch('visitors.json');
                 const data = await response.json();
                 
-                // 방문자 수만 증가
-                data.total += 1;
-                data.today += 1;
+                // 로컬 스토리지에서 카운트 가져오기
+                let totalCount = parseInt(localStorage.getItem('totalVisitors')) || data.total;
+                let todayCount = parseInt(localStorage.getItem('todayVisitors')) || data.today;
+                
+                // 날짜 확인
+                const today = new Date().toLocaleDateString('ko-KR');
+                const lastVisit = localStorage.getItem('lastVisited');
+                
+                // 새로운 날짜면 today 초기화
+                if (lastVisit !== today) {
+                    todayCount = 0;
+                }
+                
+                // 카운트 증가
+                totalCount++;
+                todayCount++;
+                
+                // 로컬 스토리지 업데이트
+                localStorage.setItem('totalVisitors', totalCount);
+                localStorage.setItem('todayVisitors', todayCount);
+                localStorage.setItem('lastVisited', today);
                 
             } catch (error) {
                 console.error('방문자 수 업데이트 실패:', error);
