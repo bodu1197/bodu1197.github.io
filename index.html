@@ -84,8 +84,31 @@
                 const response = await fetch('visitors.json');
                 const data = await response.json();
                 
-                document.getElementById('total-visitors').textContent = (data.total + 1).toLocaleString();
-                document.getElementById('today-visitors').textContent = (data.today + 1).toLocaleString();
+                // 로컬 스토리지에서 카운트 가져오기
+                let totalCount = parseInt(localStorage.getItem('totalVisitors')) || data.total;
+                let todayCount = parseInt(localStorage.getItem('todayVisitors')) || data.today;
+                
+                // 날짜 확인
+                const today = new Date().toLocaleDateString('ko-KR');
+                const lastVisit = localStorage.getItem('lastVisited');
+                
+                // 새로운 날짜면 today 초기화
+                if (lastVisit !== today) {
+                    todayCount = 0;
+                }
+                
+                // 카운트 증가
+                totalCount++;
+                todayCount++;
+                
+                // 로컬 스토리지 업데이트
+                localStorage.setItem('totalVisitors', totalCount);
+                localStorage.setItem('todayVisitors', todayCount);
+                localStorage.setItem('lastVisited', today);
+                
+                // 화면 업데이트
+                document.getElementById('total-visitors').textContent = totalCount.toLocaleString();
+                document.getElementById('today-visitors').textContent = todayCount.toLocaleString();
                 
             } catch (error) {
                 console.error('방문자 수 업데이트 실패:', error);
