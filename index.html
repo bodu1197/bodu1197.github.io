@@ -19,6 +19,9 @@
             </div>
         </div>
         <div id="feed-container"></div>
+
+        <h2>사이트맵</h2>
+        <ul id="sitemap-list"></ul>
     </div>
 
     <script>
@@ -116,9 +119,27 @@
             }
         }
 
+        async function loadSitemap() {
+            const sitemapList = document.getElementById('sitemap-list');
+            try {
+                const response = await fetch('articles.json');
+                const data = await response.json();
+                
+                data.articles.forEach(article => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<a href="${article.originalLink}">${article.title}</a>`;
+                    sitemapList.appendChild(listItem);
+                });
+            } catch (error) {
+                console.error('사이트맵 로딩 실패:', error);
+                sitemapList.innerHTML = `<li>사이트맵을 불러오는데 실패했습니다.</li>`;
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             loadArticles();
             updateVisitors();
+            loadSitemap(); // 사이트맵 로드 함수 호출
         });
     </script>
 </body>
