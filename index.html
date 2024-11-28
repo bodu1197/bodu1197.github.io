@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스웨디시 마사지 정보</title>
     <meta name="description" content="스웨디시 마사지 관련 최신 정보 및 뉴스">
+    <meta name="naver-site-verification" content="5c286f4c75de75118dda9e4c42a9f5885213a500" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,10 +19,6 @@
             </div>
         </div>
         <div id="feed-container"></div>
-
-        <h2>사이트맵</h2>
-        <button id="generate-sitemap">사이트맵 생성</button>
-        <ul id="sitemap-list"></ul> <!-- 사이트맵 리스트 추가 -->
     </div>
 
     <script>
@@ -119,60 +116,9 @@
             }
         }
 
-        async function loadSitemap() {
-            const sitemapList = document.getElementById('sitemap-list');
-            try {
-                const response = await fetch('articles.json');
-                const data = await response.json();
-                
-                data.articles.forEach(article => {
-                    const listItem = document.createElement('li');
-                    listItem.innerHTML = `<a href="${article.originalLink}">${article.title}</a>`;
-                    sitemapList.appendChild(listItem);
-                });
-            } catch (error) {
-                console.error('사이트맵 로딩 실패:', error);
-                sitemapList.innerHTML = `<li>사이트맵을 불러오는데 실패했습니다.</li>`;
-            }
-        }
-
-        function generateSitemap() {
-            fetch('articles.json')
-                .then(response => response.json())
-                .then(data => {
-                    let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
-                    sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-
-                    data.articles.forEach(article => {
-                        sitemap += '  <url>\n';
-                        sitemap += `    <loc>${article.originalLink}</loc>\n`;
-                        sitemap += `    <lastmod>${article.date}</lastmod>\n`;
-                        sitemap += '    <changefreq>daily</changefreq>\n';
-                        sitemap += '    <priority>0.5</priority>\n';
-                        sitemap += '  </url>\n';
-                    });
-
-                    sitemap += '</urlset>';
-
-                    // 사이트맵을 파일로 다운로드
-                    const blob = new Blob([sitemap], { type: 'application/xml' });
-                    const url = URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = 'sitemap.xml';
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                })
-                .catch(error => console.error('사이트맵 생성 실패:', error));
-        }
-
         document.addEventListener('DOMContentLoaded', () => {
             loadArticles();
             updateVisitors();
-            loadSitemap(); // 사이트맵 로드 함수 호출
-            document.getElementById('generate-sitemap').addEventListener('click', generateSitemap); // 버튼 클릭 시 사이트맵 생성
         });
     </script>
 </body>
